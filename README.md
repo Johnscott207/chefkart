@@ -2,6 +2,7 @@
 
 #features
 1.Login logout <br>
+2.sign in sign up <br>
 2.show product list <br>
 3.show product detail view <br>
 4.show your cart product <br>
