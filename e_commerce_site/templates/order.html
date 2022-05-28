@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Order{% endblock %}
+
+{% block content %}
+    <section class="container product_detail mt-3 p-4">
+
+        <div class="product_div container-fluid bg-light p-3 mt-2">
+ 
+            <div class="row product_list_item">
+                       
+                <div class="col-2 img" style="background-image: url('{{product.thumbnail.url}}');">
+                  
+                </div>
+                
+                <div class="col-8">
+                  <a href="{% url 'home:detail' product.id %}">
+                  <span class="product_name">{{product.name}}</span>
+                  </a>
+                  <br>
+                  <a href="{% url 'home:detail' product.id %}">
+                  <span class="product_price">₹ {{product.price}}</span>
+                  </a>
+                  <br>
+                  <div class="product_rating">
+                      {% for item in "x"|ljust:product.rating %}
+                          <span class="fa fa-star checked"></span>
+                      {% endfor %}
+                      
+                      {% for item in "x"|ljust:"5" %}
+                          {% if forloop.counter > product.rating %}
+                              <span class="fa fa-star"></span>
+                          {% endif %}
+                      {% endfor %}
+                  </div>
+            
+                <p>{{product.description}}</p>
+                  <!-- color -->
+              <form method="get" action="{% url 'home:order'  %}" >
+                  <br>
+                  <input type="number" hidden value="{{product.id}}" name="id">
+                  <div class="colors">
+                      <button type="button" class="btns color" hidden>
+                          <input type="radio" name="color" required checked value="{{varr.color}}" >
+                      </button>
+                  
+                  </div>
+
+                  <!-- varaint -->
+                  <hr>
+                  <div class="varints">
+
+                  
+                      <button type="button" class="btns varaint" hidden>
+                          <input type="radio" name="varaint"  required checked value="{{varr.color}}" >
+                      </button>
+                  
+                  </div>
+                  <label for="address">address</label><br>
+                  <textarea name="address" id="" required cols="30" rows="5"></textarea>
+<br>
+                <input type="text" name="order" value="order" hidden>
+                  <button class="buy_btn" type="submit">Place in order</button>
+                  </form>
+                  
+                </div>
+              </div>
+      
+        </div>
+
+        
+    </section>
+{% endblock %}

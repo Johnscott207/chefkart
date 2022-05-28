@@ -1,0 +1,71 @@
+
+{% extends "base.html" %}
+
+{% block title %}My Orders{% endblock %}
+
+
+{% block content %}
+   <!-- content section -->
+<section class="content mt-2">
+    <div class="container">
+      <div class="row">
+
+
+        <!-- search bar -->
+        <div class="col-lg-8 col-sm-8 bg-primary">
+    
+          <div class="product_div container-fluid bg-light p-3 mt-2">
+
+            <ul class="product_div_list">
+              
+                {% for product in orders %}
+                    <li>
+                    
+                    <div class="row product_list_item">
+                       
+                      <div class="col-2 img" style="background-image: url('{{ product.product.thumbnail.url}}');">
+                        
+                      </div>
+                      
+                      <div class="col-8">
+                        
+                        <span class="product_name">{{product.product.name}}</span>
+                        
+                        <br>
+                        
+                        <span class="product_price">₹ {{product.product.price}}</span>
+                       
+                        <br>
+                        <div class="product_rating">
+                            {% for item in "x"|ljust:product.product.rating %}
+                                <span class="fa fa-star checked"></span>
+                            {% endfor %}
+                            
+                            {% for item in "x"|ljust:"5" %}
+                                {% if forloop.counter > product.product.rating %}
+                                    <span class="fa fa-star"></span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                         
+                        <span class="product_delivery">Order on cash on delivery</span>
+                        
+                      </div>
+                    </div>
+                   
+                  </li>
+                {% endfor %}
+              
+
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+

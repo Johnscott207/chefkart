@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Product{% endblock %}
+
+{% block content %}
+    <section class="container product_detail mt-3 p-4">
+        <div class="row">
+            <div class="col-lg-5 thumbnail">
+                <img src="{{object.thumbnail.url}}" alt="{{object.thumbnail.name}}">
+            </div>
+            <div class="col-lg-6">
+                    <span class="product_detail_brand" >{{object.get_brand_display}}</span>
+                    <br>
+                    <span class="product_detail_name">{{object.name}}</span>
+                    
+                    <br>
+                    
+                    <span class="product_detail_price">₹ {{object.price}}</span>
+                    
+                    <br>
+                    <br>
+                    <div class="product_detail_rating">
+                        {% for item in "x"|ljust:object.rating %}
+                            <span class="fa fa-star checked"></span>
+                        {% endfor %}
+                        
+                        {% for item in "x"|ljust:"5" %}
+                            {% if forloop.counter > object.rating %}
+                                <span class="fa fa-star"></span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                          
+                    <span class="product_detail_delivery">cash on delivery</span>
+                    
+                    <!-- color -->
+                    <form method="get" action="{% url 'home:cart' %}" >
+                    <br>
+                    <input type="number" hidden value="{{object.id}}" name="id">
+                    <div class="colors">
+                    {% for x in colors %}
+                        <button type="button" class="btns color">{{x}}
+                            <input type="radio" name="color" required {% if forloop.counter == color %}checked{% endif %} value="{{x}}" >
+                        </button>
+                    {% endfor %}
+                    </div>
+
+                    <!-- varaint -->
+                    <hr>
+                    <div class="varints">
+
+                    {% for x in variants %}
+                        <button type="button" class="btns varaint">{{x}}
+                            <input type="radio" name="varaint" required {% if forloop.counter == variant %}checked{% endif %} value="{{x}}" >
+                        </button>
+                    {% endfor %}
+                    </div>
+                    <input id="cart" type="text" value="" hidden name="buy">
+                    <button class="buy_btn" type="button">BUY NOW</button>
+                    <button class="cart_btn" type="submit"  >ADD to Cart</button>
+                    </form>
+
+                    <hr>
+                    <p>
+                        {{object.description}}                        
+                    </p>
+
+            </div>
+        </div>
+        
+        <script>
+            document.querySelector(".buy_btn").onclick=function(){
+                if(document.querySelector("form").checkValidity()){
+                document.getElementById("cart").value="buy";
+                document.querySelector("form").submit();
+                }
+            }
+        </script>
+    </section>
+{% endblock %}

@@ -1,0 +1,83 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+   <!-- content section -->
+<section class="content mt-2">
+    <div class="container">
+      <div class="row">
+
+        <!-- filters -->
+        <div class="col-lg-2 col-sm-8 list-filter">
+          <h5 class="headline" hidden="">Filter</h5>
+          <ul hidden>
+            <li>low <input name="price" type="radio"></li>
+            <li>medium <input name="price" type="radio"></li>
+            <li>high <input name="price" type="radio"></li>
+          </ul>
+        </div>
+
+        <!-- search bar -->
+        <div class="col-lg-8 col-sm-8 bg-primary">
+          <div class="product_search_bar">
+            <input type="text" placeholder="search your product"><button><i class="fa fa-search"></i><span class="d-none d-lg-inline "> Search</span> </button>
+          </div>
+
+          <div class="product_div container-fluid bg-light p-3 mt-2">
+
+            <ul class="product_div_list">
+              
+                {% for product in products %}
+                    <li>
+                    
+                    <div class="row product_list_item">
+                       
+                      <div class="col-2 img" style="background-image: url('{{product.thumbnail.url}}');">
+                        
+                      </div>
+                      
+                      <div class="col-8">
+                        <a href="{% url 'home:detail' product.id %}">
+                        <span class="product_name">{{product.name}}</span>
+                        </a>
+                        <br>
+                        <a href="{% url 'home:detail' product.id %}">
+                        <span class="product_price">₹ {{product.price}}</span>
+                        </a>
+                        <br>
+                        <div class="product_rating">
+                            {% for item in "x"|ljust:product.rating %}
+                                <span class="fa fa-star checked"></span>
+                            {% endfor %}
+                            
+                            {% for item in "x"|ljust:"5" %}
+                                {% if forloop.counter > product.rating %}
+                                    <span class="fa fa-star"></span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <a href="{% url 'home:detail' product.id %}">      
+                        <span class="product_delivery">cash on delivery</span>
+                        </a>
+                      </div>
+                    </div>
+                    </a>
+                  </li>
+                {% endfor %}
+              
+
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
