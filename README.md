@@ -27,9 +27,17 @@
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/product%20list.png" width="450" alt="Screenshot">
 </p>
 
-
+<p align="center">
+  <h3>PRODUCT DETAIL VIEW</h3>
+  <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/product%20detail%20view.png" width="450" alt="Screenshot">
+</p>
 
 <p align="center">
   <h3>CART ORDER</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/Cart%20and%20order.png" width="450" alt="Screenshot">
+</p>
+
+<p align="center">
+  <h3>PLACE IN ORDER</h3>
+  <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/finale%20place%20in%20order.png" width="450" alt="Screenshot">
 </p>
