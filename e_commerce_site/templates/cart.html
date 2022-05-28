@@ -7,6 +7,9 @@
 
         <div class="product_div container-fluid bg-light p-3 mt-2">
             {% if buy == "true" %}
+            <center>
+                <h3>Your Order</h3>
+            </center>
             <div class="row product_list_item">
                        
                 <div class="col-2 img" style="background-image: url('{{product.thumbnail.url}}');">
@@ -62,6 +65,10 @@
                 </div>
               </div>
             {% endif %}
+            <hr>
+            <center>
+                <h3>Cart List Following</h3>
+            </center>
             <hr>
             <ul class="product_div_list">
               
