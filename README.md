@@ -41,3 +41,15 @@
   <h3>PLACE IN ORDER</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/finale%20place%20in%20order.png" width="450" alt="Screenshot">
 </p>
+
+<p align="center">
+  <h3>YOUR PREVIOUS ORDER</h3>
+  <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/previous%20orders.png" width="450" alt="Screenshot">
+</p>
+
+<p align="center">
+  <h3>SIGN IN SIGN UP</h3>
+  <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/sign%20in%20sign%20up.png" width="450" alt="Screenshot">
+</p>
+
+
