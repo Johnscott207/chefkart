@@ -1,8 +1,8 @@
 #Demo E commerce website
 
-# availabe to choose product varaint and color
+# availabe to choose product variant and color
 
-#features
+#features <br>
 1.Login logout <br>
 2.sign in sign up <br>
 2.show product list <br>
