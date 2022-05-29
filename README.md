@@ -47,7 +47,7 @@
 # enter following commands <br>
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
->python manage.py runserver 0.0.0.0:8000
+>python manage.py runserver 0.0.0.0:8000 <br>
 #Contact prana9654736312@gmail.com
 </h2>
 <br>
