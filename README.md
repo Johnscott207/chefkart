@@ -48,8 +48,6 @@
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
 >python manage.py runserver 0.0.0.0:8000
-
-#Note My System is Windows 11 if you are using diffrent system may in your system these command some change then Please google it
 #Contact prana9654736312@gmail.com
 </h2>
 <br>
