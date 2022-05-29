@@ -44,7 +44,7 @@
 <br>
 
 <h2>
-# enter following commands
+# enter following commands <br>
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
 >python manage.py runserver 0.0.0.0:8000
