@@ -23,24 +23,25 @@
 #how to setup enviourment 
 
 <p align="center">
-  <h3>Download Zip File</h3>
+  <h3>1.Download Zip File</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/download%20zip%20file.png" width="450" alt="Screenshot">
 </p>
 
 <p align="center">
-  <h3>Extract on desktop</h3>
+  <h3>2.Extract on desktop</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/extract%20on%20desktop.png" width="450" alt="Screenshot">
 </p>
 
 <p align="center">
-  <h3>folder open in Vs code</h3>
+  <h3>3.folder open in Vs code</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/open%20folder%20in%20vs%20code.png" width="450" alt="Screenshot">
 </p>
 
 <p align="center">
-  <h3>Type following commands in vs code terminal</h3>
+  <h3>4.Type following commands in vs code terminal</h3>
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/enter%20following%20cmd%20commands%20in%20vs%20code%20terminal.png" width="450" alt="Screenshot">
 </p>
+<br>
 #enter following commands
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
@@ -49,6 +50,7 @@
 #Note My System is Windows 11 if you are using diffrent system may in your system these command some change then Please google it
 #Contact prana9654736312@gmail.com
 
+<br>
 
 #screenshot 
 
