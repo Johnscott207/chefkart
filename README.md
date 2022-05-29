@@ -11,7 +11,7 @@
 5.place in order <br>
 6.your order list <br>
   
-#exteras
+# exteras
  <p>
   Build on python
   <br>
@@ -20,7 +20,7 @@
   used mysql database
   </p>
 
-#how to setup enviourment 
+# how to setup enviourment 
 
 <p align="center">
   <h3>1.Download Zip File</h3>
@@ -42,7 +42,7 @@
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/enter%20following%20cmd%20commands%20in%20vs%20code%20terminal.png" width="450" alt="Screenshot">
 </p>
 <br>
-#enter following commands
+# enter following commands
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
 >python manage.py runserver 0.0.0.0:8000
@@ -52,7 +52,7 @@
 
 <br>
 
-#screenshot 
+# screenshot 
 
 <p align="center">
   <h3>PRODUCT LIST</h3>
