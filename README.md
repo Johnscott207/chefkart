@@ -42,6 +42,8 @@
   <img src="https://github.com/Johnscott207/chefkart/blob/master/Screenshots/enter%20following%20cmd%20commands%20in%20vs%20code%20terminal.png" width="450" alt="Screenshot">
 </p>
 <br>
+
+<h2>
 # enter following commands
 >env/Scripts/Activate <br>
 >cd e_commerce_site <br>
@@ -49,7 +51,7 @@
 
 #Note My System is Windows 11 if you are using diffrent system may in your system these command some change then Please google it
 #Contact prana9654736312@gmail.com
-
+</h2>
 <br>
 
 # screenshot 
